@@ -1,0 +1,25 @@
+{
+  "name": "annasblog",
+  "version": "1.0.0",
+  "description": "Anna's Blog Site (In progress)",
+  "main": "main.js",
+  "directories": {
+    "doc": "doc"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RobertTate/AnnasBlog.git"
+  },
+  "author": "Robert Tate",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/RobertTate/AnnasBlog/issues"
+  },
+  "homepage": "https://github.com/RobertTate/AnnasBlog#readme",
+  "dependencies": {
+    "bulma": "^0.7.1"
+  }
+}
