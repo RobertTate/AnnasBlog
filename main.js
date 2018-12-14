@@ -11,8 +11,6 @@ class Blog {
 
 let blog = new Blog;
 
-console.log(blog);
-
 blog.getArticle(1)
 
 let body = document.querySelectorAll('[data-test]');

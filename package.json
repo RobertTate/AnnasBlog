@@ -20,7 +20,6 @@
   },
   "homepage": "https://github.com/RobertTate/AnnasBlog#readme",
   "dependencies": {
-    "bulma": "^0.7.1",
     "node-sass": "^4.9.2"
   }
 }
