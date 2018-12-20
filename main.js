@@ -9,4 +9,4 @@ async function fetchArticle(articleNumber) {
     });
 }
 
-fetchArticle(1);
+fetchArticle(5);

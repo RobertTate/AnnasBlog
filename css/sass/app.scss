@@ -1,9 +1,63 @@
-$primary-color: #da0a0a;
-
-p {
-	color: $primary-color;
+body {
+	margin: 1.5rem;
 }
 
-body {
-	margin: 3rem;
+.Hero {
+  background: center / cover no-repeat url("http://1.bp.blogspot.com/-s7-5uxzReI0/WeQgazl3vAI/AAAAAAAAGWw/WatoNLstCVQrsejiLckrWyE0hG3tzH-iwCK4BGAYYCw/s1600/HouseOnHarding.jpg");
+  opacity: 0;
+  animation-name: fadein1secdelay;
+  animation-duration: 1.5s;
+  animation-delay: 1s;
+  animation-fill-mode: forwards;
+  margin-bottom: 3rem;
+  width: 100%;
+  height: 550px;
+}
+
+.Intro {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #f3f3f3;
+  padding: 1rem;
+  font-family: 'Roboto Mono', monospace;
+
+
+  &-title {
+    font-size: 2rem;
+  }
+
+  &-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    @media only screen and (min-width: 900px) {
+      flex-direction: row;
+    }
+
+    &--image {
+      border-radius: 30%;
+    }
+  
+    &--subText {
+      text-align: center;
+    }
+  }
+
+  &-aboutLink {
+    color: blue;
+  }
+}
+
+
+@keyframes fadein1secdelay {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(5%);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0%);
+  }
 }
