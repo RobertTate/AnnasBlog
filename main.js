@@ -5,7 +5,10 @@ async function fetchArticle(articleNumber) {
         let parent = document.querySelector('[data-parent]');
         let sibling = document.querySelectorAll('[data-sibling]');
         let currentArticle = document.createRange().createContextualFragment(result.items[articleNumber].content);
-        parent.insertBefore(currentArticle, sibling[0]);
+        let wrappedArticle = document.createElement('div');
+        wrappedArticle.className = "ArticleContent";
+        wrappedArticle.appendChild(currentArticle);
+        parent.insertBefore(wrappedArticle, sibling[0]);
     });
 }
 

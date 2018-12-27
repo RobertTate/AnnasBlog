@@ -3,6 +3,10 @@ body {
 }
 
 .Hero {
+  @media only screen and (min-width: 1280px) {
+    background: center / contain no-repeat url("http://1.bp.blogspot.com/-s7-5uxzReI0/WeQgazl3vAI/AAAAAAAAGWw/WatoNLstCVQrsejiLckrWyE0hG3tzH-iwCK4BGAYYCw/s1600/HouseOnHarding.jpg");
+  }
+
   background: center / cover no-repeat url("http://1.bp.blogspot.com/-s7-5uxzReI0/WeQgazl3vAI/AAAAAAAAGWw/WatoNLstCVQrsejiLckrWyE0hG3tzH-iwCK4BGAYYCw/s1600/HouseOnHarding.jpg");
   opacity: 0;
   animation-name: fadein1secdelay;
@@ -20,7 +24,8 @@ body {
   align-items: center;
   background-color: #f3f3f3;
   padding: 1rem;
-  font-family: 'Roboto Mono', monospace;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 600;
 
 
   &-title {
@@ -31,22 +36,64 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding: 0 2rem;
 
     @media only screen and (min-width: 900px) {
       flex-direction: row;
     }
 
     &--image {
-      border-radius: 30%;
+      border-radius: 15%;
     }
   
     &--subText {
       text-align: center;
+
+      span {
+        font-size: 1.5rem;
+      }
     }
   }
 
   &-aboutLink {
     color: blue;
+  }
+}
+
+.ArticleContent {
+  margin-top: 2rem;
+  padding-right: 1rem;
+  padding-left: 1rem;
+  background-color: #f3f3f3;
+
+  // border: 1px solid black;
+  
+  div {
+    text-align: left !important;
+    font-family: 'Raleway', sans-serif;
+  }
+
+  .tr-caption {
+    max-width: 200px;
+    padding-top: 1rem;
+    text-align: justify;
+    font-family: 'Raleway', sans-serif;
+    font-size: 0.75rem;
+  }
+
+  table {
+    border: 3px solid #dbdbdb;
+    background-color: #e7f6ff;
+    padding: 1rem;
+    border-radius: 5%;
+  }
+
+  img {
+    border-radius: 5%;
+    @media only screen and (max-width: 325px) {
+      height: 250px;
+      width: 100%;
+    }
   }
 }
 
