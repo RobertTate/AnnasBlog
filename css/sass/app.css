@@ -57,16 +57,18 @@ body {
     font-family: 'Raleway', sans-serif;
     font-size: 0.75rem; }
   .ArticleContent table {
+    width: 95%;
     border: 3px solid #dbdbdb;
     background-color: #e7f6ff;
     padding: 1rem;
     border-radius: 5%; }
+    @media only screen and (min-width: 1025px) {
+      .ArticleContent table {
+        width: 45%; } }
   .ArticleContent img {
-    border-radius: 5%; }
-    @media only screen and (max-width: 325px) {
-      .ArticleContent img {
-        height: 250px;
-        width: 100%; } }
+    border-radius: 5%;
+    width: 100%;
+    height: auto; }
 
 @keyframes fadein1secdelay {
   0% {

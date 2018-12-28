@@ -1,5 +1,5 @@
 body {
-	margin: 1.5rem;
+  margin: 1.5rem;
 }
 
 .Hero {
@@ -82,6 +82,10 @@ body {
   }
 
   table {
+    @media only screen and (min-width: 1025px) {
+      width: 45%;
+    }
+    width: 95%;
     border: 3px solid #dbdbdb;
     background-color: #e7f6ff;
     padding: 1rem;
@@ -90,10 +94,8 @@ body {
 
   img {
     border-radius: 5%;
-    @media only screen and (max-width: 325px) {
-      height: 250px;
-      width: 100%;
-    }
+    width: 100%;
+    height: auto;
   }
 }
 
